@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AI in Education — Learn Smarter, Not Harder. An interactive showcase exploring adaptive learning, intelligent tutoring, AI voice narration, and educational technology.">
+  <meta name="author" content="AI in Education Project">
+  <title>AI in Education — Learn Smarter with AI</title>
+
+  <!-- Google Fonts for Modern Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Ambient Glow Background Effects -->
+  <div class="ambient-glow glow-top" aria-hidden="true"></div>
+  <div class="ambient-glow glow-bottom" aria-hidden="true"></div>
+
+  <!-- ==================== HEADER & NAVBAR ==================== -->
+  <header class="site-header" id="header">
+    <div class="container nav-container">
+      <a href="#hero" class="logo" aria-label="AI in Education Home">
+        <span class="logo-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+          </svg>
+        </span>
+        <span class="logo-text">Edu<span class="gradient-text">AI</span></span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#audio-section" class="nav-link">AI Voice</a></li>
+          <li><a href="#benefits" class="nav-link">Benefits</a></li>
+          <li><a href="#facts" class="nav-link">AI Facts</a></li>
+          <li><a href="#quiz" class="nav-link">Interactive Quiz</a></li>
+          <li><a href="#perspectives" class="nav-link">Ethics & Future</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Controls: Theme Switcher & Mobile Toggle -->
+      <div class="nav-actions">
+        <button id="themeToggle" class="btn-icon theme-btn" aria-label="Toggle light or dark theme" title="Toggle Theme">
+          <!-- Sun Icon (for dark mode) -->
+          <svg class="theme-icon sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.07" x2="5.64" y2="17.64"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <!-- Moon Icon (for light mode) -->
+          <svg class="theme-icon moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Mobile Menu Hamburger Button -->
+        <button id="menuToggle" class="btn-icon menu-btn" aria-label="Open navigation menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <main id="main-content">
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            <span class="badge-text">Academic Research Project &bull; College Presentation</span>
+          </div>
+
+          <h1 class="hero-title">
+            AI in Education: <br>
+            <span class="gradient-text">Learn Smarter, Not Harder.</span>
+          </h1>
+
+          <p class="hero-description">
+            Discover how Generative AI, natural language processing, and personalized adaptive algorithms are revolutionizing higher education—empowering students to learn at their own pace, master difficult concepts, and prepare for the future.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#audio-section" class="btn btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+              Listen to AI Voice
+            </a>
+            <a href="#quiz" class="btn btn-secondary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+              </svg>
+              Take the Quiz
+            </a>
+            <a href="#benefits" class="btn btn-ghost">Explore Benefits &darr;</a>
+          </div>
+
+          <!-- Quick Stats Row -->
+          <div class="hero-stats">
+            <div class="stat-item">
+              <div class="stat-number">2.5x</div>
+              <div class="stat-label">Faster Mastery via Adaptive Feedback</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">24/7</div>
+              <div class="stat-label">Always-On Intelligent Tutoring</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">89%</div>
+              <div class="stat-label">Student Engagement Improvement</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Display -->
+        <div class="hero-visual">
+          <div class="hero-card-glass">
+            <div class="hero-card-header">
+              <span class="window-dot red"></span>
+              <span class="window-dot yellow"></span>
+              <span class="window-dot green"></span>
+              <span class="window-title">AI Cognitive Tutor — Session v3.4</span>
+            </div>
+            <div class="hero-card-body">
+              <div class="chat-bubble user-bubble">
+                <div class="bubble-sender">Student</div>
+                <p>Can you break down how gradient descent optimizes neural networks in simple terms?</p>
+              </div>
+              <div class="chat-bubble ai-bubble">
+                <div class="bubble-sender">
+                  <span class="ai-sparkle">&#10024;</span> ElevenLabs EduAssistant
+                </div>
+                <p>Imagine hiking down a foggy mountain. You can't see the base, but you can feel the slope under your boots. Gradient descent takes small steps downward until you hit the lowest valley.</p>
+                <div class="interactive-tag">Audio Explanation Ready &bull; 0:42 sec</div>
+              </div>
+            </div>
+            <div class="hero-card-footer">
+              <div class="status-indicator">
+                <span class="pulse-ring"></span>
+                <span>Neural Audio Model Synced</span>
+              </div>
+              <a href="#audio-section" class="quick-listen-link">Play Audio &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== AUDIO SECTION: ELEVENLABS AUDIO PLAYER ==================== -->
+    <section class="section audio-section" id="audio-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Neural Speech Synthesis</span>
+          <h2 class="section-title">Listen to My AI Voice</h2>
+          <p class="section-subtitle">
+            Experience realistic ElevenLabs AI voice narration discussing the transformation of education through artificial intelligence.
+          </p>
+        </div>
+
+        <!-- File Location Help Card for User -->
+        <div class="audio-instruction-box">
+          <div class="instruction-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="16" x2="12" y2="12"></line>
+              <line x1="12" y1="8" x2="12.01" y2="8"></line>
+            </svg>
+          </div>
+          <div class="instruction-text">
+            <strong>Audio File Location:</strong> 
+            Place your downloaded ElevenLabs MP3 recording inside the <code>audio/</code> folder with the exact filename <code>elevenlabs.mp3</code> (Path: <code>audio/elevenlabs.mp3</code>).
+          </div>
+        </div>
+
+        <!-- Audio Player Component -->
+        <div class="audio-player-card">
+          <!-- Hidden Native Audio Element pointing to audio/elevenlabs.mp3 -->
+          <audio id="audioElement" preload="metadata" src="audio/elevenlabs.mp3"></audio>
+
+          <!-- Top Meta Row -->
+          <div class="player-top">
+            <div class="track-info">
+              <div class="track-avatar">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
+                  <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                  <line x1="12" y1="19" x2="12" y2="23"></line>
+                  <line x1="8" y1="23" x2="16" y2="23"></line>
+                </svg>
+              </div>
+              <div>
+                <h3 class="track-title" id="trackTitle">AI in Education — The Adaptive Classroom</h3>
+                <p class="track-subtitle">Narrated with ElevenLabs High-Fidelity Voice Synthesis</p>
+              </div>
+            </div>
+
+            <!-- Dynamic Audio Status Pill -->
+            <div class="player-badge" id="playerStatusBadge">
+              <span class="badge-status-dot"></span>
+              <span id="playerStatusText">Ready to Play</span>
+            </div>
+          </div>
+
+          <!-- Animated Waveform Visualizer -->
+          <div class="visualizer-container" id="visualizerContainer" title="Sound Waveform Visualizer">
+            <div class="visualizer-bar bar-1"></div>
+            <div class="visualizer-bar bar-2"></div>
+            <div class="visualizer-bar bar-3"></div>
+            <div class="visualizer-bar bar-4"></div>
+            <div class="visualizer-bar bar-5"></div>
+            <div class="visualizer-bar bar-6"></div>
+            <div class="visualizer-bar bar-7"></div>
+            <div class="visualizer-bar bar-8"></div>
+            <div class="visualizer-bar bar-9"></div>
+            <div class="visualizer-bar bar-10"></div>
+            <div class="visualizer-bar bar-11"></div>
+            <div class="visualizer-bar bar-12"></div>
+            <div class="visualizer-bar bar-13"></div>
+            <div class="visualizer-bar bar-14"></div>
+            <div class="visualizer-bar bar-15"></div>
+            <div class="visualizer-bar bar-16"></div>
+            <div class="visualizer-bar bar-17"></div>
+            <div class="visualizer-bar bar-18"></div>
+            <div class="visualizer-bar bar-19"></div>
+            <div class="visualizer-bar bar-20"></div>
+            <div class="visualizer-bar bar-21"></div>
+            <div class="visualizer-bar bar-22"></div>
+            <div class="visualizer-bar bar-23"></div>
+            <div class="visualizer-bar bar-24"></div>
+          </div>
+
+          <!-- Progress Bar & Timestamps -->
+          <div class="progress-section">
+            <div class="progress-bar-wrapper" id="progressWrapper">
+              <div class="progress-track" id="progressTrack">
+                <div class="progress-fill" id="progressFill"></div>
+                <div class="progress-thumb" id="progressThumb"></div>
+              </div>
+            </div>
+            <div class="time-display">
+              <span id="currentTime">00:00</span>
+              <span class="time-divider">/</span>
+              <span id="totalDuration">00:00</span>
+            </div>
+          </div>
+
+          <!-- Player Controls Bar -->
+          <div class="player-controls">
+            <!-- Left Controls: Playback Speeds -->
+            <div class="speed-controls" id="speedControls">
+              <span class="control-label">Speed:</span>
+              <button class="speed-btn" data-speed="0.75">0.75x</button>
+              <button class="speed-btn active" data-speed="1.0">1.0x</button>
+              <button class="speed-btn" data-speed="1.25">1.25x</button>
+              <button class="speed-btn" data-speed="1.5">1.5x</button>
+            </div>
+
+            <!-- Center Controls: Skip Back, Main Play/Pause, Skip Forward -->
+            <div class="main-buttons">
+              <button class="btn-ctrl" id="rewindBtn" title="Rewind 10 seconds" aria-label="Rewind 10 seconds">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M11 17l-5-5 5-5M18 17l-5-5 5-5"/>
+                </svg>
+                <span class="ctrl-subtext">-10s</span>
+              </button>
+
+              <button class="btn-play-pause" id="playPauseBtn" aria-label="Play or pause audio" title="Play">
+                <!-- Play SVG Icon -->
+                <svg class="icon-play" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="6 3 20 12 6 21 6 3"></polygon>
+                </svg>
+                <!-- Pause SVG Icon -->
+                <svg class="icon-pause" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="display:none;">
+                  <rect x="6" y="4" width="4" height="16"></rect>
+                  <rect x="14" y="4" width="4" height="16"></rect>
+                </svg>
+              </button>
+
+              <button class="btn-ctrl" id="forwardBtn" title="Forward 10 seconds" aria-label="Forward 10 seconds">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M13 17l5-5-5-5M6 17l5-5-5-5"/>
+                </svg>
+                <span class="ctrl-subtext">+10s</span>
+              </button>
+            </div>
+
+            <!-- Right Controls: Volume Slider & Mute -->
+            <div class="volume-controls">
+              <button class="btn-ctrl-icon" id="muteBtn" title="Toggle Mute" aria-label="Toggle Mute">
+                <svg class="volume-high-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                  <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                </svg>
+                <svg class="volume-muted-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;">
+                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                  <line x1="23" y1="9" x2="17" y2="15"></line>
+                  <line x1="17" y1="9" x2="23" y2="15"></line>
+                </svg>
+              </button>
+              <input type="range" id="volumeSlider" class="volume-slider" min="0" max="1" step="0.05" value="0.85" aria-label="Adjust Volume">
+              <span id="volumePercent" class="volume-label">85%</span>
+            </div>
+          </div>
+
+          <!-- Audio Error Notice (Graceful fallback) -->
+          <div class="audio-error-alert" id="audioErrorAlert" style="display: none;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="8" x2="12" y2="12"></line>
+              <line x1="12" y1="16" x2="12.01" y2="16"></line>
+            </svg>
+            <span id="audioErrorMessage">
+              Unable to locate <code>audio/elevenlabs.mp3</code>. Please ensure your audio file is placed in the <code>audio</code> folder.
+            </span>
+          </div>
+
+          <!-- Collapsible Transcript Box -->
+          <div class="transcript-wrapper">
+            <button class="transcript-toggle-btn" id="transcriptToggle" aria-expanded="false">
+              <span>Read Voice Recording Transcript</span>
+              <svg class="chevron-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="transcript-content" id="transcriptContent">
+              <div class="transcript-inner">
+                <p><strong>Speaker (ElevenLabs AI Voice):</strong></p>
+                <p>
+                  "Welcome to this presentation on Artificial Intelligence in Education. Today, education is undergoing the most monumental paradigm shift since the invention of the printing press. Rather than a one-size-fits-all curriculum, AI empowers students to learn through adaptive pathways that match their cognitive pace."
+                </p>
+                <p>
+                  "Intelligent tutoring systems provide instant feedback, democratize access to world-class learning resources, and free educators to focus on human connection, mentorship, and creative pedagogy. By leveraging AI thoughtfully, we empower every learner to learn smarter, not harder."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== BENEFITS SECTION: ANIMATED CARDS ==================== -->
+    <section class="section benefits-section" id="benefits">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Core Advantages</span>
+          <h2 class="section-title">Key Benefits of AI in Education</h2>
+          <p class="section-subtitle">
+            How modern machine learning models and intelligent tools transform learning outcomes for students and professors.
+          </p>
+        </div>
+
+        <div class="benefits-grid">
+          <!-- Card 1 -->
+          <div class="benefit-card" tabindex="0">
+            <div class="benefit-icon-wrapper">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2z"></path>
+                <path d="M12 6v6l4 2"></path>
+              </svg>
+            </div>
+            <div class="benefit-category">Personalization</div>
+            <h3 class="benefit-title">Adaptive Learning Paths</h3>
+            <p class="benefit-text">
+              Algorithms dynamically assess student comprehension in real time, adjusting problem difficulty, pace, and remediation so no learner is left behind.
+            </p>
+            <div class="benefit-stat-tag">&#128640; Up to 40% time saved on reviews</div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="benefit-card" tabindex="0">
+            <div class="benefit-icon-wrapper">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+              </svg>
+            </div>
+            <div class="benefit-category">Support 24/7</div>
+            <h3 class="benefit-title">Intelligent Tutoring Systems</h3>
+            <p class="benefit-text">
+              AI assistants provide immediate, contextual explanations for complex math, coding, and science problems whenever students study, day or night.
+            </p>
+            <div class="benefit-stat-tag">&#128161; 24/7 round-the-clock availability</div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="benefit-card" tabindex="0">
+            <div class="benefit-icon-wrapper">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+            </div>
+            <div class="benefit-category">Efficiency</div>
+            <h3 class="benefit-title">Instant Formative Feedback</h3>
+            <p class="benefit-text">
+              Automated grading of essays and code gives students rapid pointers on grammar, logical structure, and error fixes, fostering continuous improvement.
+            </p>
+            <div class="benefit-stat-tag">&#9889; Near instantaneous corrections</div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="benefit-card" tabindex="0">
+            <div class="benefit-icon-wrapper">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              </svg>
+            </div>
+            <div class="benefit-category">Inclusivity</div>
+            <h3 class="benefit-title">Universal Accessibility</h3>
+            <p class="benefit-text">
+              Neural speech-to-text, real-time multilingual translation, and audio description empower neurodivergent and visually impaired students to engage fully.
+            </p>
+            <div class="benefit-stat-tag">&#127758; 100+ languages translated</div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="benefit-card" tabindex="0">
+            <div class="benefit-icon-wrapper">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+            </div>
+            <div class="benefit-category">Comprehension</div>
+            <h3 class="benefit-title">Smart Content Synthesis</h3>
+            <p class="benefit-text">
+              Transform 50-page academic papers into structured bullet summaries, flashcards, concept maps, and audio briefs for rapid retention and revision.
+            </p>
+            <div class="benefit-stat-tag">&#128218; 3x faster literature reviews</div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="benefit-card" tabindex="0">
+            <div class="benefit-icon-wrapper">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 20V10M12 20V4M6 20v-6"></path>
+              </svg>
+            </div>
+            <div class="benefit-category">Proactive Help</div>
+            <h3 class="benefit-title">Predictive Retention Insights</h3>
+            <p class="benefit-text">
+              Early warning analytics alert professors when students struggle with specific syllabus modules, allowing empathetic intervention before exams.
+            </p>
+            <div class="benefit-stat-tag">&#128200; 35% reduction in dropout rates</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EXPLORE AI FACTS SECTION ==================== -->
+    <section class="section facts-section" id="facts">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Did You Know?</span>
+          <h2 class="section-title">Explore an AI Fact</h2>
+          <p class="section-subtitle">
+            Click the button below to discover empirical facts and research-backed data on AI’s expanding role in schools and universities.
+          </p>
+        </div>
+
+        <div class="fact-card" id="factCard">
+          <div class="fact-card-header">
+            <span class="fact-badge" id="factCategory">Personalized Learning</span>
+            <span class="fact-index" id="factCounter">Fact 1 of 8</span>
+          </div>
+
+          <div class="fact-card-body">
+            <div class="quote-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+              </svg>
+            </div>
+            <p class="fact-text" id="factDisplay">
+              According to a UNESCO study, AI-driven adaptive learning platforms can improve student proficiency scores by up to 30% compared to traditional, non-adaptive curricula.
+            </p>
+            <div class="fact-source" id="factSource">
+              Source: UNESCO Global Education Monitoring Report
+            </div>
+          </div>
+
+          <div class="fact-card-actions">
+            <button class="btn btn-primary" id="nextFactBtn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="23 4 23 10 17 10"></polyline>
+                <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>
+              </svg>
+              Explore Next AI Fact
+            </button>
+            <button class="btn btn-secondary" id="copyFactBtn" title="Copy fact to clipboard">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              Copy Fact
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== INTERACTIVE QUIZ SECTION ==================== -->
+    <section class="section quiz-section" id="quiz">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Test Your Knowledge</span>
+          <h2 class="section-title">AI in Education Quiz</h2>
+          <p class="section-subtitle">
+            Answer these 3 questions to evaluate your understanding of educational AI technologies and their classroom applications.
+          </p>
+        </div>
+
+        <div class="quiz-container">
+          <!-- Quiz Progress Indicator -->
+          <div class="quiz-header" id="quizHeader">
+            <div class="quiz-step-info">
+              <span id="quizStepText">Question 1 of 3</span>
+              <span id="quizScoreTracker">Score: 0 / 3</span>
+            </div>
+            <div class="quiz-progress-track">
+              <div class="quiz-progress-fill" id="quizProgressFill" style="width: 33.33%;"></div>
+            </div>
+          </div>
+
+          <!-- Active Question Area -->
+          <div class="quiz-card" id="quizCard">
+            <h3 class="quiz-question-title" id="quizQuestion">
+              Loading question...
+            </h3>
+
+            <!-- Options List (Rendered dynamically) -->
+            <div class="quiz-options-grid" id="quizOptions">
+              <!-- Dynamically populated by script.js -->
+            </div>
+
+            <!-- Instant Feedback Message Box -->
+            <div class="quiz-feedback-box" id="quizFeedback" style="display:none;">
+              <div class="feedback-icon" id="feedbackIcon"></div>
+              <div class="feedback-text" id="feedbackText"></div>
+            </div>
+
+            <!-- Quiz Action Buttons -->
+            <div class="quiz-actions" id="quizActions">
+              <button class="btn btn-primary" id="quizNextBtn" disabled>
+                Next Question &rarr;
+              </button>
+            </div>
+          </div>
+
+          <!-- Final Results Card (Initially hidden) -->
+          <div class="quiz-results-card" id="quizResultsCard" style="display:none;">
+            <div class="results-badge-icon" id="resultsBadgeIcon">&#127891;</div>
+            <h3 class="results-title" id="resultsTitle">Quiz Completed!</h3>
+            <p class="results-score-text">
+              You scored <span class="highlight" id="finalScoreDisplay">3</span> out of 3 (<span id="scorePercent">100%</span>)
+            </p>
+            <p class="results-description" id="resultsDescription">
+              Outstanding! You have a firm grasp of how AI augments modern pedagogy and adaptive learning tools.
+            </p>
+            <div class="results-action-group">
+              <button class="btn btn-primary" id="retakeQuizBtn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="1 4 1 10 7 10"></polyline>
+                  <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path>
+                </svg>
+                Retake Quiz
+              </button>
+              <a href="#audio-section" class="btn btn-secondary">Review Audio Lecture</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ETHICS & FUTURE PERSPECTIVES ==================== -->
+    <section class="section perspectives-section" id="perspectives">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Critical Analysis</span>
+          <h2 class="section-title">Ethics, Equity & The Teacher's Role</h2>
+          <p class="section-subtitle">
+            Responsible implementation of AI in academic institutions requires balancing technological efficiency with human values.
+          </p>
+        </div>
+
+        <div class="perspectives-grid">
+          <div class="perspective-card">
+            <div class="perspective-number">01</div>
+            <h3>Teacher-in-the-Loop Pedagogy</h3>
+            <p>
+              AI is not a substitute for human educators. Teachers provide mentorship, emotional empathy, moral development, and critical dialogue that algorithms cannot replicate. AI acts as an educator's tireless co-pilot.
+            </p>
+          </div>
+
+          <div class="perspective-card">
+            <div class="perspective-number">02</div>
+            <h3>Data Privacy & Algorithmic Fairness</h3>
+            <p>
+              Student performance records and cognitive profiles must be guarded under strict privacy laws (FERPA/GDPR). Models must be vetted to prevent cultural biases and ensure equitable assessments for all students.
+            </p>
+          </div>
+
+          <div class="perspective-card">
+            <div class="perspective-number">03</div>
+            <h3>Nurturing Critical Thinking</h3>
+            <p>
+              With answers accessible at the click of a prompt, the educational focus shifts from rote memorization to question formulation, hypothesis testing, source verification, and independent reasoning.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="logo">
+            <span class="logo-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+              </svg>
+            </span>
+            <span class="logo-text">Edu<span class="gradient-text">AI</span></span>
+          </div>
+          <p class="footer-desc">
+            A college assignment web project exploring Artificial Intelligence in modern education, featuring ElevenLabs neural voice narration and interactive learning components.
+          </p>
+        </div>
+
+        <div class="footer-links-group">
+          <div class="footer-col">
+            <div class="footer-heading">Sections</div>
+            <ul>
+              <li><a href="#hero">Overview</a></li>
+              <li><a href="#audio-section">Listen to AI Voice</a></li>
+              <li><a href="#benefits">Key Benefits</a></li>
+              <li><a href="#facts">AI Facts</a></li>
+              <li><a href="#quiz">Interactive Quiz</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <div class="footer-heading">Technologies</div>
+            <ul>
+              <li><a href="https://elevenlabs.io" target="_blank" rel="noopener noreferrer">ElevenLabs Voice AI</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio" target="_blank" rel="noopener noreferrer">HTML5 Audio API</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noopener noreferrer">Modern CSS Gradients</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer">Vanilla JavaScript</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 AI in Education Project. Academic Presentation Showcase.</p>
+        <p class="audio-notice">Audio Source: <code>audio/elevenlabs.mp3</code></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== BACK TO TOP BUTTON ==================== -->
+  <button id="backToTopBtn" class="back-to-top" aria-label="Back to top of page" title="Scroll to top">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="12" y1="19" x2="12" y2="5"></line>
+      <polyline points="5 12 12 5 19 12"></polyline>
+    </svg>
+  </button>
+
+  <!-- ==================== TOAST NOTIFICATION POPUP ==================== -->
+  <div id="toastNotification" class="toast" role="status" aria-live="polite">
+    <span class="toast-icon">&#10003;</span>
+    <span class="toast-message" id="toastMessage">Fact copied to clipboard!</span>
+  </div>
+
+  <!-- JavaScript Application Script -->
+  <script src="script.js"></script>
+</body>
+</html>
